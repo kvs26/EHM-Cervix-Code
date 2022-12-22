@@ -334,26 +334,5 @@ acc_svm = metrics.accuracy_score(y_test, y_final)
 print("Accuracy of SVM: ", acc_svm*100)
 
 
-# In[32]:
-
-
-from sklearn.metrics import confusion_matrix, classification_report
-
-print("Classification Report: \n", classification_report(y_test, y_final))
-
-file = open('y_final.txt','w')
-for i in y_final:
-    file.write(i+"\n")
-file.close()
-
-file = open('y_test.txt','w')
-for i in y_test:
-    file.write(i+"\n")
-file.close()
-
-
-# In[ ]:
-
-
 
 
